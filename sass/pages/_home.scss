@@ -1,0 +1,103 @@
+/********************* defines main layout of main section of home page ******************************/
+
+
+
+
+/*
+**  define styling for section with class section-about.
+*/
+.section-about{
+    background-color: $color-white;
+
+    padding: $section-padding-vertically-lg  0;
+    @include respond(lg){ padding: $section-padding-vertically-md  0; }
+    @include respond(sm){ padding: $section-padding-vertically-sm 0; }
+
+    &__text{
+        
+                @include respond(sm){
+                    text-align: center;
+                }
+    }
+
+    &__paragraph{
+        font-family: Cairo;
+        font-size: 1.8rem;
+        color: #191414;
+        // text-align: right;
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__image-container{
+        
+    }
+
+    &__image{
+        width: 100%;
+        display: block;
+        box-shadow: 0 10px 20px 0 $color-grey-light;
+        border-radius: .5rem;
+    }
+
+}
+
+
+
+
+/*
+**  define styling for section with class section-dishes.
+*/
+.section-dishes{
+
+    padding: $section-padding-vertically-lg  0;
+    @include respond(lg){ padding: $section-padding-vertically-md  0; }
+    @include respond(sm){ padding: $section-padding-vertically-sm 0; }
+
+    background-image: linear-gradient(to bottom, rgba($color-black-3, 0.9), rgba($color-black-3, 0.9))
+                          ,  url("../img/css_images/seafood-2.jpg");
+
+    .heading-primary{
+        color: $color-white;
+    }
+}
+
+
+
+
+/*
+**  define styling for section with class section-contact-us.
+*/
+.section-contact-us{
+
+    padding: $section-padding-vertically-lg  0;
+    @include respond(lg){ padding: $section-padding-vertically-md  0; }
+    @include respond(sm){ padding: $section-padding-vertically-sm 0; }
+
+    .heading-primary{
+        color: $color-primary;
+        font-family: Cairo;
+        font-size: 3.1rem;
+        font-weight: bold;
+        line-height: 1.87;
+    }
+
+    &__map {
+        border: .3rem solid $color-primary;
+        padding: .3rem ;
+        border-radius: .4rem;
+
+        iframe{
+            display: block;
+            width: 100%;
+            height: 30rem;
+        }
+
+    }
+
+
+}
+

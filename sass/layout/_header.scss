@@ -1,0 +1,39 @@
+/*
+**  define styling for element component with specified with classe contact-header.
+*/
+.contact-header{
+
+    display: block;
+
+    @include respond(md){
+        display: none;
+    }
+
+
+
+    // background-color:  $color-primary;
+    background-image: linear-gradient(to right bottom, $color-primary, rgba($color-primary,.8));
+
+    padding: 1.2rem 0;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info{
+
+        &__item{
+            color: $color-white;
+            font-size: $default-font-size;
+            font-family: muli, sans-serif;
+
+            &:not(:last-child){
+                margin-right: 6rem;
+            }
+        }
+        
+    }        
+
+}

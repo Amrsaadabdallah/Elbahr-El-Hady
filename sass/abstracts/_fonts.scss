@@ -1,0 +1,28 @@
+/*
+**  Cairo Font  =>  font-family: cairo , sans-serif;
+*/
+@font-face {
+    font-family: 'cairo';
+    src: url('../fonts/cairo_font/Cairo.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/cairo_font/Cairo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/cairo_font/Cairo.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/cairo_font/Cairo.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/cairo_font/Cairo.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/cairo_font/Cairo.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
+
+
+/*
+**  Muli Font =>   font-family: muli , sans-serif;
+*/
+@font-face {
+font-family: 'muli';
+     src: url('../fonts/muli_font/Muli.eot'); /* IE9 Compat Modes */
+     src: url('../fonts/muli_font/Muli.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('../fonts/muli_font/Muli.woff2') format('woff2'), /* Super Modern Browsers */
+          url('../fonts/muli_font/Muli.woff') format('woff'), /* Pretty Modern Browsers */
+          url('../fonts/muli_font/Muli.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('../fonts/muli_font/Muli.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

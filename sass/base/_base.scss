@@ -1,0 +1,88 @@
+/*
+**  CSS Initializati Reset
+*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+/*
+**  Set root font => to set the default 1rem unit value
+*/
+html{
+    //this defines what 1rem is 10px in xl & xxl media
+    font-size: 62.5%;  /* 1rem = 10px -->  10/16 *100% = 62.5% */
+
+
+    @include respond(lg){
+        font-size: 56.25%;  /*1rem = 9px -->  9/16 *100%  =  56.25%*/
+    }
+
+
+
+    @include respond(sm){
+        font-size: 50%;  /* 1rem = 8px -->  8/16 *100%  =  50% */
+    }
+
+
+
+    
+    // @include respond(lg){
+    //     font-size: 56.25%;  /*1rem = 9px -->  9/16 *100%  =  56.25%*/
+    // }
+
+    // @include respond(md){
+    //     font-size: 50%;  /* 1rem = 8px -->  8/16 *100%  =  50% */
+    // }
+
+    // @include respond(sm){
+    //     font-size: 43.75%;  /* 1rem = 7px -->  7/16 *100%  =  43.75% */
+    // }
+
+    // @include respond(xs){
+    //     font-size: 37.5%;  /* 1rem = 6px -->  6/16 *100%  =  37.5% */
+    // }
+
+
+}
+
+
+
+
+/*
+**  Set default inherited properties in body element 
+*/
+body{    
+        box-sizing: border-box;
+        font-family: cairo , sans-serif;
+        font-size: $default-font-size;
+        font-weight: normal;
+        line-height: 1.83;
+        color: $color-black-1;
+}
+
+
+
+
+
+/*
+**  Reset builts of ul and ol  Lists.
+*/
+ul, ol{  list-style-type: none;  }
+
+
+
+
+
+/*
+**  Create custom ptoperty to set floated direction 
+*/
+// :root{
+//         --left-dir: left;
+//         --right-dir: right;
+// }
+// var(--left-dir) var(--right-dir)

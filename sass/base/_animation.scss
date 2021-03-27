@@ -1,0 +1,89 @@
+/*
+**  Animation classes  
+*/
+
+.animate-moveInRight{
+    animation-name: moveInRight ;
+    animation-duration: 2s;  //1s
+    animation-timing-function: ease-out;
+}
+
+.animate-moveInLeft{
+    animation-name: moveInLeft ;
+    animation-duration: 2s; //1s
+    animation-timing-function: ease-out;
+}
+
+.animate-moveInBottom{
+    animation-name: moveInBottom ;
+    animation-duration:0.5s ;
+    animation-timing-function: ease-out;
+}
+
+.btn--animate{
+    /*same config of  animate-moveInBottom*/
+    animation-name: moveInBottom ;
+    animation-duration: 1s ;  //.5s
+    animation-timing-function: ease-out;
+
+    /*set some configuration for btn*/
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+
+
+
+/*
+**  Animation Keyframes 
+*/
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(1rem);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0rem);
+
+    }
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0rem);
+
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0rem);
+
+    }
+}
+
+

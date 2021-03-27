@@ -1,0 +1,72 @@
+/*
+**  define styling for ul or ol  elements components with specified with classe social-list.
+*/
+.social-list{
+
+    display: flex;
+    // background-color: blue;
+
+    &__item{
+        &:not(:last-child){
+            margin-#{$right}: .5rem;
+        }
+    }
+
+    &__link:link,
+    &__link:visited{
+        display: block;
+        width: 100%;
+        width: 2.96rem ;
+        height: 2.96rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        border: .1rem solid $color-white;
+        text-decoration: none;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: background-color .2s;
+
+        .social-list__icon{        
+            color: $color-white;
+            font-size: $default-font-size;  
+            transition: color .2s ;
+
+        }
+
+    }
+
+    &__link:hover ,
+    &__link:active {
+
+        background-color: $color-white;
+
+        .social-list__icon{            
+    
+            &--youtube{
+                color: #ff0000;
+            } 
+    
+            &--instagram{
+                color: #405de6;
+            } 
+    
+            &--twitter{
+                color: #1da1f2;
+            } 
+            
+            &--facebook{
+                color: #3b5998;
+            } 
+
+            &--gamil{
+                color: #ea4335;
+            }
+    
+        }
+
+    }
+
+}

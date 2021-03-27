@@ -1,0 +1,63 @@
+/*
+**  define styling for form element components with specified with classe form.
+*/
+.form{
+
+    &__input,
+    &__textarea{
+        display: block;
+        width: 100%;
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: inherit;
+
+        padding: 1.5rem 2rem;
+        border-radius: .2rem;
+        background-color: rgba($color-white,.5);
+        border: .2rem solid $color-grey-light-1;
+        transition: all .3s;
+
+    
+        &::-webkit-input-placeholder{
+            color: $color-grey-light-1;
+        }
+    
+
+       &:focus{
+           outline: none;
+           box-shadow: 0 1rem 2rem rgba($color-black, .1);
+           border: .2rem solid $color-green-light;
+       } 
+
+       &:focus:invalid{
+        border: .2rem solid $color-orange-dark;
+       }
+
+       &.error{  margin-top: 0 !important; }
+    
+    }
+
+     label.error{
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: inline-block;
+        padding-left: 2rem;
+        margin-top: .7rem ;
+        display: block;
+    }
+
+
+    &__textarea{
+        resize: none;
+    }
+
+    &__submit-btn{
+
+        @include respond(sm){
+            display: block;
+            margin:0 auto
+        }
+        
+    }
+
+}

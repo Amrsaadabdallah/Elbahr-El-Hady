@@ -1,0 +1,182 @@
+/*
+**  define styling for element component with specified with classe nav.
+*/
+.nav{
+    background-color: $color-white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-bottom:1px solid $color-grey-light ;
+    box-shadow: 0 .1rem .2rem rgba($color-black,.4);
+
+
+    .navigation{
+
+        display: flex;
+        justify-content: space-between;
+        padding: .6rem  0 ;
+
+        @include respond(md){
+            justify-content: center;
+            padding: .8rem 0;
+        }
+
+
+        /* logo image*/
+        &__logo-image{
+            display: block;
+            height: 8rem;
+            width: auto;
+            cursor: pointer;
+        }
+
+
+        /* ul list*/
+        &__list{            
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            @include respond(md){
+
+                border: .22rem solid $color-grey-light;
+                background-color: rgba($color-primary-dark, .9);
+                
+                position: fixed;
+                top: 10rem;
+                right:2rem ;
+                z-index: 99999;
+                border-radius: 1rem;
+
+                z-index: 99999;
+
+                width: 30rem;
+                flex-basis: auto;
+                flex-direction: column;
+                overflow: hidden;
+            }
+
+        }
+
+
+        /*ul li item*/
+        &__item{
+            
+            @include respond(md){
+                width: 100%;
+                &:not(:last-child){
+
+                    border-bottom: .1rem solid $color-grey-light;
+                }
+            }
+        }
+
+        /*ul li a*/
+        &__link{
+            font-size: 1.8rem ;
+            text-decoration: none;
+
+            @include respond(md){
+                font-size: 1.8rem ;
+                display: block;
+                width: 100%;
+                padding: 1.2rem 0;
+                text-align: center;
+                font-weight: 800;
+                transition: all .3s;
+                
+
+                &:hover,
+                &:active,
+                &--active:link,&--active:visited{
+                    background-color: white;
+                    color: $color-primary;
+                }
+
+
+            }
+
+            
+            &:link,
+            &:visited{
+                color: $color-black-2;
+                @include respond(md){ color: white;}
+            }
+
+            &:hover,
+            &:active,
+            &--active:link,&--active:visited{
+                color: $color-primary;                
+            }
+
+
+        }
+
+
+        &__toggle-btn{
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            
+            border: none;
+            
+            width: 5rem;
+            height: 5rem;
+            border-radius: .4rem ;
+            background-color: $color-primary;
+            padding: 1rem .7rem;
+
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: box-shadow .3s , transform .3s ;
+
+
+            &:hover{
+                justify-content: space-around;
+                transform: translateY(-.1rem);
+                box-shadow: 0 .6rem .3rem rgba($color-black,.4);
+            }
+
+            &:focus{ 
+                outline: none; 
+                transform: translateY(0);
+                box-shadow: 0 .5rem .3rem rgba($color-black,.4);
+            }
+
+            & span{
+                display: block;
+                width: 100%;
+                height: .35rem;
+                background-color: $color-white;
+                border-radius: 2rem;
+            }
+
+
+
+            display: none;
+            // opacity: 0;
+            // visibility: hidden;
+            // // z-index: -1;
+            @include respond(md){
+                display: flex; 
+                // opacity: 1;
+                // visibility: visible;
+                // z-index: 9999; 
+            }
+
+
+        }
+
+
+    }
+
+}
+
+
+

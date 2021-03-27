@@ -1,0 +1,67 @@
+/*
+**  define styling for elements components with specified with classe card.
+*/
+.card{
+
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: .5rem;
+
+
+    &__header {
+ 
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: .3rem;
+    }
+
+
+    &__title {
+        font-family: Cairo;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2.68;
+        // text-align: right;
+        color: $color-black-1 ;
+        border-bottom: .3rem solid $color-primary;
+    }
+
+    &__paragraph  {
+
+        font-family: Cairo;
+        font-size: 1.4rem;
+        line-height: 2.14;
+        // text-align: right;
+        color: $color-grey-light-2;
+
+    }
+
+    &__body , &__footer {
+        margin: 0 1rem;
+    }
+
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn{
+        font-family: Cairo;
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: 0.03rem;
+        padding: 1rem 1.8rem; 
+    }
+
+    &__price{
+        color: $color-primary;
+        font-family: Cairo;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+}
+

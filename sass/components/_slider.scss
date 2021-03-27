@@ -1,0 +1,136 @@
+/*
+**  define styling for form element components with specified with classe slider in owl carousel plugin.
+*/
+.slider{
+    position: relative;
+
+    .owl-carousel .owl-nav{
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        display: flex;
+        justify-content: space-between;
+
+        text-align:  center;
+    }
+
+    .owl-carousel .owl-dots{
+        display: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next{
+        outline: none;
+        width: 3.86rem;
+        height: 3.86rem;
+        border: solid .35rem $color-primary;
+        border-radius: 50%;
+        overflow: hidden;
+        transition:  background-color .2s;
+
+        &:hover{
+            background-color: $color-white;
+        }
+
+        span {
+            color:$color-primary ;
+            font-weight: bolder;
+            font-size: 2.5rem;
+            line-height: 1rem;
+        }
+
+    }
+
+
+    &__item{
+        position: relative;
+        height: 75vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+   &__item--1{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.96))
+                          ,  url("../img/css_images/seafood-2.jpg");
+   }
+
+   &__item--2{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.96))
+                        ,  url("../img/css_images/seafood-3.jpg");
+    }
+
+    &__item--3{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.96))
+                        ,  url("../img/css_images/seafood.jpg");
+    }
+
+
+
+   &__text{
+       color: $color-white;
+       text-align: center;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+   }
+
+   &__heading{
+    font-size: 5.7rem;
+    font-weight: bold;
+    line-height: 1.18;
+    letter-spacing: normal;
+    color: $color-primary;
+
+    
+    @include respond(lg){
+        font-size: 5rem;
+        }
+
+    @include respond(md){
+        font-size: 4.7rem;
+        }
+
+    @include respond(sm){
+        font-size: 4rem;
+        }
+
+    @include respond(xs){
+        font-size: 3.5rem;
+        }
+
+
+
+
+
+
+
+   }
+
+   &__paragraph{
+    opacity: 0.71;
+    font-family: muli, sans-serif;
+    font-size: $default-font-size;
+    font-weight: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #ffffff;
+   }
+
+}
+
+
+
+
+/*
+**  Owl Carousel is not working with direction RTL to fix it add this styling 
+*/
+// .owl-stage-outer{
+//     position:relative;
+//     overflow:hidden;
+//     -webkit-transform:translate3d(0,0,0);
+//     direction: ltr;
+// }

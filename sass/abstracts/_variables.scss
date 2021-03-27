@@ -1,0 +1,77 @@
+/*
+**  Font size variables 
+*/
+$default-font-size: 1.6rem ;
+
+
+/*
+**  Sections PaddingY  variables 
+*/
+$section-padding-vertically-lg: 8rem;
+$section-padding-vertically-md: 7rem;
+$section-padding-vertically-sm: 6rem;
+
+
+
+/*
+** Colors variables 
+*/
+$color-primary: #c4398c ;
+$color-primary-dark: #9e0a77;
+
+$color-white: #ffffff  ;
+
+$color-grey-light: #c5c9cb ;
+$color-grey-light-1: #979797 ;
+$color-grey-light-2: #8b8e8f ;
+$color-grey-dark: #58585a ;
+
+$color-black: #000000 ;
+$color-black-1: #191414 ;
+$color-black-2: #1d1818 ;
+$color-black-3: #1b1616 ;
+
+$color-orange-light:#ffb900;
+$color-orange-dark:#ff7730;
+
+$color-green-light:  #55c57a ; 
+$color-green-dark: #28b485  ;
+
+
+
+
+/*
+**  lang to set float direction variables by using $lang variable en or ar
+*/
+$lang: ar ;
+$left: left ;
+$right: right;
+
+
+@if $lang == en{
+    $left: left ;
+    $right: right;
+}@else{
+    $left: right ;
+    $right: left;
+}
+
+
+
+/*
+**  lang to set float direction variables by using $direction variable ltr or rtl
+*/
+// $direction: ltr ;
+// $left: left ;
+// $right: right;
+
+
+// @if $direction == ltr{
+//     $left: left ;
+//     $right: right;
+// }@else{
+//     $left: left ;
+//     $right: right;
+// }
+
+

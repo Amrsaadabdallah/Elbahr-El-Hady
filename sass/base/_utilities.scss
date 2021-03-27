@@ -1,0 +1,36 @@
+/*
+**  define utility classes to make clearfix for specified floated elements
+*/
+.u-clearfix::after {
+  content: "";
+  display: block;
+  clear: both !important ;
+}
+
+
+
+
+/*
+**  define utility class for center inline & inline-block specified elements 
+*/
+.u-center-text{  text-align: center !important ; }
+
+
+
+
+
+/*
+**  define utility classes for set margin bottom for specified elements
+*/
+.u-mb-1{ margin-bottom: 1rem !important ; }
+.u-mb-2{ margin-bottom: 1.6rem !important ; }
+.u-mb-3{ margin-bottom: 2rem !important ; }
+.u-mb-4{ margin-bottom: 1.5rem !important ; }
+.u-mb-5{ margin-bottom: 2rem !important ; }
+.u-mb-6{ margin-bottom: 4rem !important ; }
+.u-mb-7{ margin-bottom: 6rem !important ; }
+.u-mb-8{ margin-bottom: 7rem !important ; }
+.u-mb-9{ margin-bottom: 9rem !important ; }
+.u-mb-10{ margin-bottom: 12rem !important ; }
+
+

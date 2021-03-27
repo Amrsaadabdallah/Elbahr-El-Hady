@@ -1,0 +1,83 @@
+/*
+**  clearfix mixin  
+*/
+@mixin clearfix {
+
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+}
+
+
+
+/****************** MEDIA QUERY MANAGER *****************/
+
+/*
+** Bootstrap 5 breakpoints
+**  xs: 0, // X-Small devices (portrait phones, less than 576px)
+**  sm: 576px, // Small devices (landscape phones, less than 768px)
+**  md: 768px,  // Medium devices (tablets, less than 992px)
+**  lg: 992px,// Large devices (desktops, less than 1200px)
+**  xl: 1200px,// X-Large devices (large desktops, less than **1400px)
+** xxl: 1400px  
+*/
+
+
+/*
+**  MEDIA QUERY MANAGER Mixin with bootstrap5 Breakpoint in px
+*/
+// @mixin respond($breakpoint){
+//     @if $breakpoint == xs {
+//         @media (max-width: 576px) { @content};   
+//     }
+
+//     @if $breakpoint == sm {
+//         @media (max-width: 768px) { @content};   
+//     }
+
+//     @if $breakpoint == md {
+//         @media (max-width: 992px) { @content};   
+//     }
+
+//     @if $breakpoint == lg {
+//         @media (max-width: 1200px) { @content};   
+//     }
+
+//     @if $breakpoint == xl {
+//         @media (max-width: 1400px) { @content};   
+//     }
+
+// }
+
+
+
+/*
+**  MEDIA QUERY MANAGER Mixin with bootstrap5 Breakpoint in em
+*/
+@mixin respond($breakpoint){
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 36em) { @content};   
+    }
+
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 48em) { @content};   
+    }
+
+    @if $breakpoint == md {
+        @media only screen and (max-width: 62em) { @content};   
+    }
+
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 75em) { @content};   
+    }
+
+    @if $breakpoint == xl {
+        @media only screen and (max-width: 87.5em) { @content};   
+    }
+
+}
+
+

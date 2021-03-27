@@ -1,0 +1,69 @@
+/*
+**  define styling for element components with specified with classe footer.
+*/
+.footer{
+    // background-color:  $color-primary;
+    background-image: linear-gradient(to right bottom, $color-primary, rgba($color-primary,.8));
+
+    padding: 1.2rem 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        @include respond(xs){
+            justify-content: space-around;
+        }
+
+
+    }
+
+
+    &__Link:link,
+    &__Link:visited{
+        display: inline-block;
+        text-decoration: none;
+        font-family: cairo , sans-serif;
+        font-weight: bolder;
+        color: $color-white;
+        padding: .1rem .5rem ;
+        border-radius: .2rem;
+
+        transition: all .2s;
+    }
+
+    &__Link:hover,
+    &__Link:active{
+        background-color: $color-white;
+        color: $color-black-1;
+    }
+
+    &__Link:hover{
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+    }
+    
+    &__Link:active{
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+
+
+    &__info{
+
+        &__item{
+            font-size: 1.4rem;
+            color: $color-white;
+            font-family: cairo, sans-serif;
+
+            &:not(:last-child){
+                margin-left: 6rem;
+            }
+        }
+        
+    }        
+
+}
